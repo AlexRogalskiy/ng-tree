@@ -36,7 +36,7 @@
     "pre:publish": "npm run clean && npm run test && npm run lint && npm run compile && mkdir -p dist && cp -R src/styles.css README.md media dist",
     "post:publish": "npm run build:demo && gh-pages -d dist-demo",
     "start": "ng serve",
-    "build:demo": "ng build",
+    "build": "ng build",
     "test": "ng test -sr",
     "test:w": "ng test -w",
     "test:cov": "ng test -sr -cc",
